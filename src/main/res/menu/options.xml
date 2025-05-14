@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@id/idMenuOptions"
+        android:checkableBehavior="all">
+        <item
+            android:id="@id/itemVibrate"
+            android:title="@string/VibrateOnAlarm"
+            android:checkable="true" />
+        <item
+            android:id="@id/itemPlaySound"
+            android:title="@string/PlaySoundOnAlarm"
+            android:checkable="true" />
+        <item
+            android:id="@id/itemLanguage"
+            android:title="@string/Language" />
+        <item
+            android:id="@id/AppInfo"
+            android:title="@string/AppInformation" />
+    </group>
+</menu>

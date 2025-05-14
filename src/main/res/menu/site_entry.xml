@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/itemEdit"
+        android:title="@string/Edit" />
+    <item
+        android:id="@id/itemNewSite"
+        android:title="@string/NewSite" />
+    <item
+        android:id="@id/itemDelete"
+        android:title="@string/DeleteSite" />
+    <item
+        android:id="@id/itemLocate"
+        android:title="@string/LocateIPDevices" />
+    <item
+        android:id="@id/itemConnect"
+        android:title="@string/Connect" />
+    <item
+        android:id="@id/itemRememberMe"
+        android:title="@string/RememberPassword"
+        android:checkable="true" />
+</menu>

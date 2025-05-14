@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyTheme" parent="@android:style/Theme">
+        <item name="android:windowTitleBackgroundStyle">@style/WindowTitleBackground</item>
+    </style>
+    <style name="WindowTitleBackground">
+        <item name="android:background">@drawable/activity_title_bar</item>
+        <item name="android:padding">0.0px</item>
+    </style>
+</resources>

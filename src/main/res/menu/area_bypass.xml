@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@id/idMenuAreaBypass"
+        android:checkableBehavior="all">
+        <item
+            android:id="@id/itemBypassOpenZones"
+            android:title="@string/BypassAllOpenZones" />
+        <item
+            android:id="@id/itemBypassArea"
+            android:title="@string/BypassZones" />
+        <item
+            android:id="@id/itemUnBypasArea"
+            android:title="@string/unbypassArea" />
+    </group>
+</menu>

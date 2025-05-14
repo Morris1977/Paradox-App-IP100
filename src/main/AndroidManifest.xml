@@ -1,4 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
-
+<manifest xmlns:tools="http://schemas.android.com/tools"
+    android:installLocation="auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-feature
+        android:name="android.hardware.wifi" />
+    <!-- Consente all'app di creare socket di rete e di utilizzare protocolli di rete personalizzati. Il browser e altre applicazioni forniscono mezzi per inviare i dati a Internet, quindi non è richiesta questa autorizzazione per inviare dati a Internet. -->
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+    <!-- Consente all'applicazione di visualizzare informazioni sulle connessioni di rete, ad esempio le reti esistenti e connesse. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Consente all'applicazione di controllare la vibrazione. -->
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+    <!-- Consente all'applicazione di ricevere pacchetti inviati a tutti i dispositivi su una rete Wi-Fi utilizzando indirizzi multicast, non solo il tuo telefono. Viene consumata più batteria rispetto alla modalità non multicast. -->
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <supports-screens
+        android:largeScreens="true" />
+    <!-- Consente di controllare se possiedi una licenza per questa applicazione di Google Play. -->
+    <uses-permission
+        android:name="com.android.vending.CHECK_LICENSE" />
+    <application
+        android:theme="@style/MyTheme"
+        android:label="@string/app_name"
+        android:icon="@drawable/icon"
+        android:name="com.Paradox.MyApplication"
+        android:allowBackup="true">
+        <activity
+            android:label="@string/app_name"
+            android:exported="true"
+            android:name="com.Paradox.ParadoxActivity"
+            android:configChanges="keyboard|locale|orientation"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.Paradox.LocateActivity"
+            android:configChanges="keyboardHidden|locale|orientation" />
+        <activity
+            android:name="com.Paradox.TabMainPanel"
+            android:configChanges="keyboardHidden|locale|orientation"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.Paradox.EditSiteActivity"
+            android:configChanges="keyboardHidden|locale|orientation"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.Paradox.LanguageSelectActivity" />
+    </application>
 </manifest>

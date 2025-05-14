@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+    android:padding="3.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="63.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@id/ibEditMode"
+        android:layout_width="35.0dip"
+        android:layout_height="35.0dip"
+        android:src="@drawable/edit_red_minus"
+        android:layout_centerVertical="true" />
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="@drawable/pgm_control_background_editing_cell"
+        android:paddingLeft="3.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_toRightOf="@id/ibEditMode"
+        android:layout_centerVertical="true">
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="@color/textcolor"
+            android:id="@id/PGM_Num"
+            android:paddingLeft="3.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PGM:"
+            android:layout_centerVertical="true" />
+        <EditText
+            android:textSize="18.0sp"
+            android:textColor="@color/textcolor"
+            android:id="@id/PGM_label"
+            android:background="@android:color/transparent"
+            android:paddingLeft="3.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:maxLines="1"
+            android:lines="1"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:selectAllOnFocus="true"
+            android:maxLength="16"
+            android:layout_toLeftOf="@id/ibdragdrop"
+            android:layout_toRightOf="@id/PGM_Num"
+            android:layout_centerVertical="true"
+            android:inputType="text" />
+        <ImageView
+            android:id="@id/ibdragdrop"
+            android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:src="@drawable/dragdrophandle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+        <ImageView
+            android:id="@id/btnPGMDelete"
+            android:background="@drawable/smallbutton"
+            android:paddingRight="6.0dip"
+            android:visibility="gone"
+            android:layout_width="80.0dip"
+            android:layout_height="31.0dip"
+            android:layout_marginRight="7.0dip"
+            android:src="@drawable/erase"
+            android:scaleType="centerInside"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    android:id="@id/tblLayoutPanelArea"
+    android:background="@drawable/system_cell_background"
+    android:layout_width="fill_parent"
+    android:layout_height="179.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow
+        android:id="@id/areaCell"
+        android:paddingLeft="3.0dip"
+        android:clickable="true">
+        <TextView
+            android:textSize="17.0sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_gravity="left"
+            android:id="@id/tvAreaName"
+            android:padding="2.0dip"
+            android:layout_width="wrap_content"
+            android:layout_span="2"
+            android:text="Area" />
+        <TextView
+            android:text="" />
+        <ImageView
+            android:layout_gravity="right"
+            android:id="@id/ivAlarmBellAnimation"
+            android:background="@drawable/alarm_bell_animation"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:paddingLeft="3.0dip">
+
+        <TextView
+            android:id="@id/tvAreaOpenZones"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_span="2"
+            android:padding="2.0dip"
+            android:text="@string/LoadingWait"
+            android:textColor="@android:color/black"
+            android:textSize="11.0sp" />
+        <TextView
+            android:textSize="11.0sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="right"
+            android:id="@id/tvAreaStatus"
+            android:padding="2.0dip"
+            android:layout_width="wrap_content"
+            android:layout_span="2"
+            android:text="@string/LoadingWait" />
+        <ImageView
+            android:layout_gravity="right"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="15.0dip"
+            android:src="@drawable/system_status_arrow" />
+    </TableRow>
+    <TableRow
+        android:paddingLeft="3.0dip">
+        <TextView
+            android:textSize="11.0sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="left"
+            android:id="@id/tvAreaZonesStatus"
+            android:padding="2.0dip"
+            android:layout_width="wrap_content"
+            android:layout_span="2" />
+        <TextView
+            android:textSize="12.0sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_gravity="right"
+            android:id="@id/tvTimerLabel"
+            android:padding="2.0dip"
+            android:layout_width="fill_parent"
+            android:layout_span="2" />
+    </TableRow>
+    <TableRow
+        android:background="@android:color/white"
+        android:paddingLeft="11.0dip">
+        <ImageView
+            android:layout_gravity="top"
+            android:id="@id/ibSystemAction_ArmArrow"
+            android:layout_width="5.0dip"
+            android:layout_height="5.0dip"
+            android:src="@drawable/system_action_arrow" />
+        <ImageView
+            android:layout_gravity="top"
+            android:id="@id/ibSystemAction_CustomArrow"
+            android:layout_width="5.0dip"
+            android:layout_height="5.0dip"
+            android:src="@drawable/system_action_arrow" />
+        <ImageView
+            android:layout_gravity="top"
+            android:id="@id/ibSystemAction_StayArrow"
+            android:layout_width="5.0dip"
+            android:layout_height="5.0dip"
+            android:src="@drawable/system_action_arrow" />
+        <ImageView
+            android:layout_gravity="top"
+            android:id="@id/ibSystemAction_DisarmArrow"
+            android:layout_width="5.0dip"
+            android:layout_height="5.0dip"
+            android:src="@drawable/system_action_arrow" />
+    </TableRow>
+    <TableRow
+        android:background="@android:color/white"
+        android:paddingLeft="11.0dip">
+        <ImageView
+            android:layout_gravity="top"
+            android:id="@id/ibArea_Arm"
+            android:clickable="true"
+            android:layout_width="74.0dip"
+            android:layout_height="74.0dip"
+            android:src="@drawable/system_arm_button"
+            android:scaleType="fitXY" />
+        <ImageView
+            android:layout_gravity="top"
+            android:id="@id/ibArea_Instant"
+            android:clickable="true"
+            android:layout_width="74.0dip"
+            android:layout_height="74.0dip"
+            android:src="@drawable/system_instant_button"
+            android:scaleType="fitXY" />
+        <ImageView
+            android:layout_gravity="top"
+            android:id="@id/ibArea_Stay"
+            android:clickable="true"
+            android:layout_width="74.0dip"
+            android:layout_height="74.0dip"
+            android:src="@drawable/system_stay_button"
+            android:scaleType="fitXY" />
+        <ImageView
+            android:layout_gravity="top"
+            android:id="@id/ibArea_Disarm"
+            android:clickable="true"
+            android:layout_width="74.0dip"
+            android:layout_height="74.0dip"
+            android:src="@drawable/system_disarm_button"
+            android:scaleType="fitXY" />
+    </TableRow>
+    <TableRow
+        android:background="@android:color/white"
+        android:paddingLeft="11.0dip">
+        <TextView
+            android:textSize="12.0sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:id="@id/tvArm"
+            android:layout_width="74.0dip"
+            android:text="@string/Arm" />
+        <TextView
+            android:textSize="12.0sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:id="@id/tvCust"
+            android:layout_width="74.0dip"
+            android:text="@string/Instant" />
+        <TextView
+            android:textSize="12.0sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:id="@id/tvStay"
+            android:layout_width="74.0dip"
+            android:text="@string/Stay" />
+        <TextView
+            android:textSize="12.0sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:id="@id/tvDisarm"
+            android:layout_width="74.0dip"
+            android:text="@string/Disarm" />
+    </TableRow>
+    <TableRow
+        android:background="@android:color/white"
+        android:paddingLeft="11.0dip">
+        <TextView
+            android:textSize="10.0sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:id="@id/tvCurrArm"
+            android:layout_width="74.0dip"
+            android:text="@string/Current" />
+        <TextView
+            android:textSize="10.0sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:id="@id/tvCurrCustom"
+            android:layout_width="74.0dip"
+            android:text="@string/Current" />
+        <TextView
+            android:textSize="10.0sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:id="@id/tvCurrStay"
+            android:layout_width="74.0dip"
+            android:text="@string/Current" />
+        <TextView
+            android:textSize="10.0sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:id="@id/tvCurrDisarm"
+            android:layout_width="74.0dip"
+            android:text="@string/Current" />
+    </TableRow>
+</TableLayout>

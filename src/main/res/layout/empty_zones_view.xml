@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="horizontal"
+    android:id="@id/empty_Bypass_view"
+    android:background="@android:color/white"
+    android:visibility="gone"
+    android:clickable="true"
+    android:longClickable="true"
+    android:layoutAnimation="@anim/in_from_right_animation"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/empty_Bypass_viewXX"
+        android:clickable="true"
+        android:longClickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="18.0sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:padding="3.0dip"
+            android:clickable="true"
+            android:longClickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/NoResultMatchFilter" />
+        <TextView
+            android:textSize="15.0sp"
+            android:textColor="@android:color/black"
+            android:padding="3.0dip"
+            android:clickable="true"
+            android:longClickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pressForMenu" />
+        <TextView
+            android:textSize="15.0sp"
+            android:textColor="@android:color/black"
+            android:padding="3.0dip"
+            android:clickable="true"
+            android:longClickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ClickForPrevious" />
+    </LinearLayout>
+    <ImageView
+        android:gravity="center|right"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="15.0dip"
+        android:src="@drawable/system_status_arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

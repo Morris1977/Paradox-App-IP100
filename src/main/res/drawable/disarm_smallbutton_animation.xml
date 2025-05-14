@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+    android:oneshot="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:duration="300"
+        android:drawable="@drawable/disarm_smallbutton_edelay" />
+    <item
+        android:duration="300"
+        android:drawable="@drawable/disarm_smallbutton_on" />
+    <item
+        android:duration="300"
+        android:drawable="@drawable/disarm_smallbutton_edelay" />
+    <item
+        android:duration="300"
+        android:drawable="@drawable/disarm_smallbutton_on" />
+    <item
+        android:duration="300"
+        android:drawable="@drawable/disarm_smallbutton_edelay" />
+    <item
+        android:duration="300"
+        android:drawable="@drawable/disarm_smallbutton_on" />
+</animation-list>

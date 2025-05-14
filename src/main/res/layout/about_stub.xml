@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.Paradox.ViewFlipperCleanupOnHome
+    android:id="@id/about_flipper"
+    android:background="@android:color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout
+        android:id="@id/layout_AboutList"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="*"
+        android:shrinkColumns="*">
+        <TableRow
+            android:layout_marginTop="5.0dip">
+            <include
+                android:id="@id/aboutSys"
+                android:layout_height="55.0dip"
+                layout="@layout/about" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="3.0dip">
+            <include
+                android:id="@id/aboutCon"
+                android:layout_height="55.0dip"
+                layout="@layout/about" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="3.0dip">
+            <include
+                android:id="@id/aboutApp"
+                android:layout_height="55.0dip"
+                layout="@layout/about" />
+        </TableRow>
+    </TableLayout>
+    <include
+        android:id="@id/layout_AboutSys"
+        layout="@layout/about_system" />
+    <include
+        android:id="@id/layout_AboutCon"
+        layout="@layout/about_connection_settings" />
+    <include
+        android:id="@id/layout_AboutApp"
+        layout="@layout/about_app_information" />
+</com.Paradox.ViewFlipperCleanupOnHome>

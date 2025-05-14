@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@android:color/white"
+    android:paddingLeft="5.0dip"
+    android:paddingTop="3.0dip"
+    android:clickable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/pgm_control_background_cell"
+        android:paddingLeft="3.0dip"
+        android:paddingTop="3.0dip"
+        android:layout_width="150.0dip"
+        android:layout_height="48.0dip">
+        <TextView
+            android:textSize="16.0sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:id="@id/PGM_Num"
+            android:paddingLeft="2.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PGM:" />
+        <TextView
+            android:textSize="16.0sp"
+            android:textColor="@android:color/black"
+            android:id="@id/PGM_label"
+            android:paddingLeft="2.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="5.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="30.0dip">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@id/onButton"
+            android:visibility="gone"
+            android:layout_width="66.0dip"
+            android:layout_height="66.0dip"
+            android:src="@drawable/pgm_control_on" />
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@id/offButton"
+            android:paddingLeft="5.0dip"
+            android:visibility="gone"
+            android:layout_width="70.0dip"
+            android:layout_height="69.0dip"
+            android:src="@drawable/pgm_control_off"
+            android:layout_toRightOf="@id/onButton" />
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@id/timer"
+            android:paddingLeft="1.0dip"
+            android:visibility="gone"
+            android:layout_width="24.0dip"
+            android:layout_height="24.0dip"
+            android:src="@drawable/timer"
+            android:layout_toRightOf="@id/offButton"
+            android:layout_centerVertical="true" />
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@id/pulseUtilKeyButton"
+            android:layout_width="66.0dip"
+            android:layout_height="66.0dip"
+            android:src="@drawable/momentary_switch"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

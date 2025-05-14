@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/about_system_layout"
+        android:background="@android:color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TableLayout
+            android:background="@android:color/white"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingBottom="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:shrinkColumns="*">
+            <TableRow
+                android:layout_marginTop="3.0dip">
+                <TextView
+                    android:textSize="17.0sp"
+                    android:textColor="#ff808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="1"
+                    android:text="@string/PanelCOLON" />
+            </TableRow>
+            <TableRow
+                android:background="@drawable/cell_normal"
+                android:layout_height="90.0dip"
+                android:layout_marginTop="1.0dip">
+                <TextView
+                    android:textSize="17.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:paddingLeft="12.0dip"
+                    android:paddingTop="12.0dip"
+                    android:paddingBottom="12.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TypeCOLON" />
+                <TextView
+                    android:textSize="17.0sp"
+                    android:textColor="@android:color/black"
+                    android:id="@id/about_sys_Panel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow
+                android:background="@drawable/cell_normal"
+                android:layout_height="90.0dip"
+                android:layout_marginTop="1.0dip">
+                <TextView
+                    android:textSize="17.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:paddingLeft="12.0dip"
+                    android:paddingTop="12.0dip"
+                    android:paddingBottom="12.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/SoftwareCOLON" />
+                <TextView
+                    android:textSize="17.0sp"
+                    android:textColor="@android:color/black"
+                    android:id="@id/about_sys_Software"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow
+                android:background="@drawable/cell_normal"
+                android:layout_height="90.0dip"
+                android:layout_marginTop="1.0dip">
+                <TextView
+                    android:textSize="17.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:paddingLeft="12.0dip"
+                    android:paddingTop="12.0dip"
+                    android:paddingBottom="12.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/SerialNumberCOLON" />
+                <TextView
+                    android:textSize="17.0sp"
+                    android:textColor="@android:color/black"
+                    android:id="@id/about_sys_SerialNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="3.0dip">
+                <TextView
+                    android:textSize="17.0sp"
+                    android:textColor="#ff808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="1"
+                    android:text="@string/IPModuleCOLON" />
+            </TableRow>
+            <TableRow
+                android:background="@drawable/cell_normal"
+                android:layout_height="90.0dip"
+                android:layout_marginTop="1.0dip">
+                <TextView
+                    android:textSize="17.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:paddingLeft="12.0dip"
+                    android:paddingTop="12.0dip"
+                    android:paddingBottom="12.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TypeCOLON" />
+                <TextView
+                    android:textSize="17.0sp"
+                    android:textColor="@android:color/black"
+                    android:id="@id/about_sys_IPtype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow
+                android:background="@drawable/cell_normal"
+                android:layout_height="90.0dip"
+                android:layout_marginTop="1.0dip">
+                <TextView
+                    android:textSize="17.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:paddingLeft="12.0dip"
+                    android:paddingTop="12.0dip"
+                    android:paddingBottom="12.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/SoftwareCOLON" />
+                <TextView
+                    android:textSize="17.0sp"
+                    android:textColor="@android:color/black"
+                    android:id="@id/about_sys_IPsoftware"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow
+                android:background="@drawable/cell_normal"
+                android:layout_height="90.0dip"
+                android:layout_marginTop="1.0dip">
+                <TextView
+                    android:textSize="17.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:paddingLeft="12.0dip"
+                    android:paddingTop="12.0dip"
+                    android:paddingBottom="12.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/HardwareCOLON" />
+                <TextView
+                    android:textSize="17.0sp"
+                    android:textColor="@android:color/black"
+                    android:id="@id/about_sys_IPhardware"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>
